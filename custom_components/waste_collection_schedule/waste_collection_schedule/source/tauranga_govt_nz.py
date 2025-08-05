@@ -31,7 +31,7 @@ class Source:
         self._address: str = address
         self._session: requests.Session = requests.Session()
 
-    ADDRESS_URL = "https://www.tauranga.govt.nz/Services/SearchService.asmx/DoRIDStreetPredictiveSearch"
+    ADDRESS_URL = "https://www.tauranga.govt.nz/Services/SearchService.asmx/?op=DoRIDStreetPredictiveSearch"
     WASTE_URL = "https://www.tauranga.govt.nz/living/rubbish-and-recycling/kerbside-collections/when-to-put-your-bins-out"
 
     def fetch(self):
